@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>RotateEncryption</PackageId>
+    <Authors>wk</Authors>
+    <Title>Rotate encryption</Title>
+    <Title>Simple string encryption</Title>
+    <Version>0.1.0</Version>
+  </PropertyGroup>
+</Project>
