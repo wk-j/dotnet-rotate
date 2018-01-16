@@ -2,7 +2,7 @@
 
 - Simple encryption using array rotation.
 
-## Support characters
+### Support characters
 
 ```
 0123456789
@@ -10,17 +10,19 @@ abcdefghijklmnopqrstuvwxyz
 ABCDEFGHIJKLMNOPQRSTUVWXYZ
 ```
 
-## Installation
+### Installation
 
 ```
 nuget install DotNetEncryption
 ```
 
-## Usage
+### Usage
 
 ```csharp
+using RotateEncryption;
+
 var input = "SecretToken1234";
-var encrypt = RotateEncryption.Rotate.Encrypt(input);
-var decrypt = RotateEncryption.Rotate.Decrypt(encrypt);
-Assert.Equal(input, decrypt);
+var encrypt = Rotate.Encrypt(input);
+var decrypt = Rotate.Decrypt(encrypt);
+Console.WriteLine(input == decrypt);
 ```
